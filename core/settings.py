@@ -79,27 +79,27 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blog',
-        'USER': 'postgres',
-        'PASSWORD': '123123',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dfdkv8kgbo09mf',
-#         'USER': 'oshxaqutyhapif',
-#         'PASSWORD': 'b5c23463a2750a93f7ecd34b018b7c3fa5d66d5e4c00257ae92d1851bd36176f',
-#         'HOST': 'ec2-44-205-177-160.compute-1.amazonaws.com',
+#         'NAME': 'blog',
+#         'USER': 'postgres',
+#         'PASSWORD': '123123',
+#         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd7c34hsgkq0qh0',
+        'USER': 'nupixuhclcvfdc',
+        'PASSWORD': 'f6e65ea4bd4b7c372d086b3074dd526051bf9b8d5fe97407296a8e6a14618bda',
+        'HOST': 'ec2-52-54-212-232.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=5000)
 DATABASES['default'].update(db_from_env)
